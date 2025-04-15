@@ -6,6 +6,8 @@
 //
 
 #if canImport(UIKit)
+#if targetEnvironment(macCatalyst)
+#else
 
 import UIKit
 
@@ -79,4 +81,5 @@ private extension SpringMotionView {
     }
 }
 
+#endif
 #endif

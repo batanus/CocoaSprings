@@ -6,6 +6,8 @@
 //
 
 #if canImport(AppKit)
+#if targetEnvironment(macCatalyst)
+#else
 
 import AppKit
 
@@ -87,5 +89,5 @@ private extension SpringMotionView {
         currentMotionState = nil
     }
 }
-
+#endif
 #endif

@@ -6,6 +6,8 @@
 //
 
 #if canImport(AppKit)
+#if targetEnvironment(macCatalyst)
+#else
 
 import AppKit
 
@@ -127,4 +129,5 @@ private extension SpringMotionPanel {
     }
 }
 
+#endif
 #endif
